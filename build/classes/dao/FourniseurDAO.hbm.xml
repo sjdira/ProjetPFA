@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="dao.FourniseurDAO" table="FOURNISEUR_DAO" >
+
+	<id name="idFournisseur" column="ID_FOURNISSEUR"  >
+		<generator class="native"></generator>
+	</id>
+	
+	<property name="nomFournisseur" column="NOM_FOURNISEUR" ></property>
+	
+	
+
+	
+</class>
+ 
+  
+</hibernate-mapping>

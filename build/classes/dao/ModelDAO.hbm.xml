@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="dao.ModelDAO" table="MODEL_DAO" >
+
+	<id name="idModel" column="ID_MODEL"  >
+		<generator class="native"></generator>
+	</id>
+	
+	<property name="NomModel" column="NOM_MODEL" ></property>
+	
+	
+	
+<set name="marques" table="MARQ_MODEL" inverse="true" lazy="false">
+		<key column="ID_MODEL" ></key>
+		<many-to-many class="dao.MarqueMaterielDAO" column="ID_MARQUE" > </many-to-many>
+	</set>
+	
+</class>
+ 
+  
+</hibernate-mapping>

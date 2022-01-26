@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="dao.DemandeMaintenance" table="DEMANDE_MAINTENANCE" >
+
+	<id name="IdDemande" column="ID_DEMANDE"  >
+		<generator class="native"></generator>
+	</id>
+	
+	<property name="Nom" column="NOM" ></property>
+	<property name="Prenom" column="PRENOM" ></property>
+	<property name="Email" column="MAIL" ></property>
+	<property name="Sujet" column="SUJET" ></property>
+	<property name="direction" column="DIRECTIOM" ></property>
+	<property name="Msg" column="MSG" ></property>
+
+	
+</class>
+ 
+  
+</hibernate-mapping>

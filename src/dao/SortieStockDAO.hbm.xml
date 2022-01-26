@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="dao.SortieStockDAO" table="SORTIE_STOCK_DAO" >
+
+	<id name="IdSortie" column="ID_SORTIE_STOCK"  >
+		<generator class="native"></generator>
+	</id>
+	
+	<property name="Ninvo" column="N_INVO" ></property>
+	<property name="Nserie" column="N_SERIE" ></property>
+	<property name="Materiel" column="MATERIEL" ></property>
+	<property name="Marque" column="MARQUE" ></property>
+	<property name="Model" column="MODEL" ></property>
+	<property name="NomB" column="NOM_B" ></property>
+	
+	<property name="Direction" column="DIRECTION" ></property>
+	<property name="Statut" column="STATUT" ></property>
+	<property name="Remaque" column="REMARQUE" ></property>
+	<property name="ResponsableSortie" column="RESPONSABLE_SORTIE" ></property>
+	<property name="FileJoint" column="FILE_JOINT" ></property>
+	<property name="Etat" column="ETAT" ></property>
+	<property name="date" column="DATE" ></property>
+	<property name="dateAchat" column="DATE_ACHAT" ></property>
+	
+</class>
+ 
+  
+</hibernate-mapping>

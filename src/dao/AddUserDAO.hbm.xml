@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="dao.AddUserDAO" table="ADD_USER_DAO" >
+
+	<id name="idUser" column="ID_USER"  >
+		<generator class="native"></generator>
+	</id>
+	
+	<property name="Nom" column="NOM" ></property>
+	<property name="Prenom" column="PRENOM" ></property>
+	<property name="mail" column="MAIL" ></property>
+	<property name="mdp" column="MDP" ></property>
+	<property name="identifiant" column="IDENTIFIANT" ></property>
+	<property name="DroitAcces" column="DROIT_ACCES" ></property>
+
+	
+</class>
+ 
+  
+</hibernate-mapping>

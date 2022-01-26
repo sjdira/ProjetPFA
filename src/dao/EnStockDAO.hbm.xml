@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="dao.EnStockDAO" table="EN_STOCK_DAO" >
+
+	<id name="idEnStock" column="ID_EN_STOCK"  >
+		<generator class="native"></generator>
+	</id>
+	
+	<property name="typeMateriel" column="TYPE_MATERIEL" ></property>
+	<property name="marqueMateriel" column="MARQUE_MATERIEL" ></property>
+	<property name="model" column="MODEL" ></property>
+	<property name="nserie" column="N_SERIE" ></property>
+	<property name="fournisseur" column="FOURNISSEUR" ></property>
+	<property name="numeroBC" column="NUMERO_BC" ></property>
+	<property name="numeroBL" column="NUMERO_BL" ></property>
+	<property name="budget" column="BUDGET" ></property>
+	<property name="responsable" column="RESPONSABLE" ></property>
+	<property name="numeroInventaire" column="NUMERO_INVENTAIRE" ></property>
+	<property name="Commentaire" column="COMMENTAIRE" ></property>
+	<property name="date" column="DATE" ></property>
+	<property name="statut" column="STATUT" ></property>
+	
+
+	
+</class>
+ 
+  
+</hibernate-mapping>
